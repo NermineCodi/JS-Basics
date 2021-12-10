@@ -10,5 +10,17 @@
             <label for="year">Birth year : </label><input type="text" id="year" name="year"/><br/>
             <button id="validate" name="validate">validate</button>
         </form>
+        <script>
+           
+
+            document.getElementById("validate").addEventListener("click", () => {
+                let shoeSize = document.getElementById("shoe_size").value
+                let birthYear = document.getElementById("year").value
+                let result = (shoeSize * 2 + 5) * 50 - birthYear + 1766
+                
+                alert("Result: " + result)
+            })
+            
+        </script>
     </body>
 </html>

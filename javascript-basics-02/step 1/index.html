@@ -6,5 +6,20 @@
   </head>
   <body>
       <img src="images/image1.jpg" id="image1" />
+      <script>
+        let image = document.querySelector("img")
+        let toggle = true
+        image.addEventListener("mouseover", () => {
+          if (toggle){
+            image.src = "images/image1_2.jpg"
+            toggle = !toggle
+          }else{
+            image.src = "images/image1.jpg"
+            toggle = !toggle
+          }
+          
+        })
+      </script>
   </body>
+  
 </html>

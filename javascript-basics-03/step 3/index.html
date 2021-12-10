@@ -14,5 +14,17 @@
   <div class="color red" ></div>
   <div class="color blue" ></div>
 </div>
+<script>
+  let div = document.querySelector("#text")
+ 
+  let divArr = document.querySelectorAll(".color")
+  divArr.forEach(element => {
+    element.addEventListener("click", (e) => {
+      let className = e.target.classList[1]
+      div.style.color = className
+      })
+    })
+
+</script>
 </body>
 </html>

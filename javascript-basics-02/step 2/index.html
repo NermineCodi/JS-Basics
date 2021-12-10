@@ -8,5 +8,15 @@
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
   </form>
+  <script>
+    let input = document.querySelector("input")
+    // input.onblur = function onBlur () {
+    //     alert("Thank you for participating!")
+    // }
+
+    input.addEventListener("focus", () => {
+      alert("You're welcome!")
+    })
+  </script>
 </body>
 </html>

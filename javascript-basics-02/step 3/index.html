@@ -8,5 +8,19 @@
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
   </form>
+  <script>
+    //creating html element
+    let div = document.createElement("div")
+
+    //add the element to the body
+    document.body.appendChild(div)
+
+    let input = document.getElementById("name")
+    //"input" or "change"
+    input.addEventListener("input", () => {
+      //changing the content of the div to the value of the input
+      div.innerHTML = input.value
+    })
+  </script>
 </body>
 </html>
